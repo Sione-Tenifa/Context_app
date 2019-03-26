@@ -1,14 +1,14 @@
 import React from 'react'
 import { Card, Image} from 'semantic-ui-react'
 import { AccountConsumer, } from "../providers/AccountProvider";
-// import myImage from '../components/image.png'
+import joe from './joe.jpg';
 
 
 const Account = () => (
   <AccountConsumer>
     { value => (
       <Card>
-        <Image src='/components/joe.jpg' />
+        <Image  src={joe}/>
         <Card.Content>
           <Card.Header>
             {value.username}
