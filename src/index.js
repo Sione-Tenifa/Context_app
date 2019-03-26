@@ -5,11 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, } from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
+import AccountProvider from './providers/AccountProvider'
+
 
 ReactDOM.render(
+  <AccountProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
+  </AccountProvider>
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
